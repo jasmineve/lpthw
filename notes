@@ -1,0 +1,86 @@
+exercise 0 
+Set-up
+Don’t use vim or emacs for now. Nor should you use a python 3.
+
+exercise 1 
+A good first program
+Know the syntax error meaning.
+
+
+exercise 2 
+# is called ‘Pound sign’.
+
+exercise 3 
+% is called ‘Modulus’, it stands for “X divided by Y with J remaining.” For example, “100 divided by 16 with 4 remaining.” The result of % is the J part, or the remaining part.
+e.g. 5 % 2 = 1.
+order of operations: PEMDAS. i.e. Parentheses Exponents Multiplication Division Addition Subtraction 
+
+exercise 4 
+= assigns the value on the right to a variable on the left,, the == tests if two things have equal value.
+
+exercise 5 
+= assigns the value on the right to a variable on the left,, the == tests if two things have equal value.
+How to embed variables inside a string? 
+exercise 6
+by using specialized format sequences and then putting the variables at the end with a special syntax. 
+1 is not a valid variable name, they need to start with a character. 
+%s : converts the variable using str()
+%r: 原封不动使用 (we use %r for debugging since it displays the ‘raw’ data of the variable.)
+%d: decimal integer.
+ 注意%s 和 %r 的区别。
+e.g. print “I said: %r.” % x
+print “I said: ’%s’.” % y
+
+
+using quotation marks inside quotation marks:
+You could do this in one of three ways:
+1) Use single and double quotes together:
+>>> print '"A word that needs quotation marks"'
+"A word that needs quotation marks"
+2) Escape the double quotes within the string:
+>>> print "\"A word that needs quotation marks\""
+"A word that needs quotation marks" 
+3) Use triple-quoted strings:
+>>> print """ "A word that needs quotation marks" """
+"A word that needs quotation marks" 
+exercise 7
+using two lines into one single-line print is a bad idea. Normally you want to separate a long single line into two lines.
+exercise 8
+Python is going to print the strings in the most efficient way it can, not replicate exactly the way you wrote them. 
+e.g. 
+formatter = “%r”
+print formatter % “I had this thing”
+output: ‘I had this thing’
+exercise 9
+\n stands for start on a new line.
+exercise 10
+Escape sequences
+Escape What it does. \\ 	    Backslash (\) \'          Single-quote (')  \" 	   Double-quote (")  \a  	   ASCII bell (BEL)  \b        ASCII backspace (BS)  \f         ASCII formfeed (FF) \n        ASCII linefeed (LF) \N{name} Character named name in the Unicode database (Unicode only)  \r         ASCII carriage return (CR)  \t         ASCII horizontal tab (TAB) \uxxxx Character with 16-bit hex value xxxx (Unicode only)  \Uxxxxxxxx Character with 32-bit hex value xxxxxxxx (Unicode only)  \v ASCII vertical tab (VT) \ooo   Character with octal value oo \xhh   Character with hex value hh 
+things to note: 1. escape sequences start with backslashes, not forward slashes.
+2. don’t use %r, it’s for debugging.
+
+exercise 11
+things to remember: 
+raw_input converts a line from input and converts it to a string.
+If we put a comma at the end of each print line, the print doesn’t end the line with a new line character.
+
+exercise 12
+问题：1. newline stripped 是什么意思 2. open, file, os, sys
+
+exercise 13
+Command line arguments come in as strings. 
+argv stands for “argument variables”
+python ex13,py: here ex13.py is called an argument.
+script, first, second, third = argv : here this line unpacks argv and assigns the arguments to four variables. 
+
+The line print('Hello world!') means “Print out the text in the string 'Hello world!'.” When Python executes this line, you say that Python is calling the print() function and the string value is being passed to the function. A value that is passed to a function call is an argument. Notice that the quotes are not printed to the screen. They just mark where the string begins and ends; they are not part of the string value.
+
+
+
+exercise 15
+“Hard coding” means putting some bit of information that should come from the user as a string right in our program. 
+pydoc: you type this in command line to look up for the info on 
+open(filename): returns a file object.
+
+exercise 17
+features: means modules. add features = add modules. 
