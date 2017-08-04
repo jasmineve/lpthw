@@ -1,0 +1,2 @@
+# This is an <h1> tag
+因为平时工作较忙，空余时间比较少，学习python时只能大多利用空余时间。在刚登记开智的课程时是先看的LPTHW，使用的版本是python 2.7。一开始的整体练习还是较为顺畅的，对print(),int()之类的function，formatters和raw_input语句之类的使用方法掌握的还算可以。问题出现在了ex13，主要难点是对argv和import modules不太明白，后来通过google stackoverflow和python docs逐渐明晰了一些概念。但此时觉得也许通读一下automate the boring stuff with python这种更类似于textbook的书更有利于知识的系统化，便开始两本书相结合起来看，同时学习了learn enough command line to be dangerous，初步知晓了在terminal中如何进行各种command line的操作。在阅读automate的正文时理解比较顺畅，但在练习practice project时候还是凸显出很多时候没有思路。后来思考觉得这个问题主要是因为对书中的概念只是变成了单纯的passive knowledge，但并没有真正的去做举一反三的输出，从而导致面对实际问题时力所不逮。
